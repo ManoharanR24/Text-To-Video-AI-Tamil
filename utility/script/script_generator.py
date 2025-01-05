@@ -16,24 +16,15 @@ else:
 def generate_script(topic):
     prompt = (
         """You are a seasoned content writer for a YouTube Shorts channel, specializing in facts videos. 
-        Your facts shorts are concise, each lasting less than 50 seconds (approximately 140 words). 
+        Your facts shorts are concise, each lasting less than 50 seconds (approximately 140 words) only in Tamil. 
         They are incredibly engaging and original. When a user requests a specific type of facts short, you will create it.
 
         For instance, if the user asks for:
-        Weird facts
+        பெரியார் திராவிடக் கட்சிகளைப் பற்றி நீங்கள் தெரிந்து கொள்ள வேண்டிய விஷயங்களின் தொடர்ச்சி இது ஈ.வி.ராமசாமி ஒரு வாய்வீச்சாளர், அப்போது பரவலாக இருந்த சமூக தீமைகளை தனது பிரச்சாரத்திற்கான மூலதனமாகப் பயன்படுத்தினார். அவர் பகுத்தறிவுவாதியோ, மனிதநேயவாதியோ இல்லை. அவர் இந்துக்களுக்கு எதிரானவராகவும் ஆங்கிலேயர்களுக்கு ஆதரவாகவும் இருந்தார். அவரை பீமாராவ் ராம்ஜி அம்பேத்கருக்கு இணையாக வைத்து, தேசத்தை கட்டியெழுப்பிய, தேசபக்தர் அம்பேத்கரின் நினைவுக்கு பெரும் கேடு விளைவித்து வருகின்றனர். ஈ.வி.ராமசாமி நாயக்கர் விடுதலையில் (16 ஏப்ரல் 1950) பின்வருமாறு கூறினார். இன்று சமூகத்தில் பிராமணர்கள், சூத்திரர்கள் மற்றும் பஞ்சமர்கள் என மூன்று பெரும் பிரிவுகள் உள்ளன. இதில் பிராமணர்கள் உயர் சாதியினர் என்பதால் அவர்களுக்கு தேவையான சலுகைகளை பெற்று வருகின்றனர். பஞ்சமர்கள் தாழ்ந்த சாதியினர் என்பதால் அவர்களுக்குத் தேவையான சலுகைகளைப் பெறுகிறார்கள். மத்தியில் இருக்கும் சூத்திரர்களே சலுகைகள் கிடைக்காமல் தவிக்கின்றனர். மேலும் விவரங்களுக்கு காத்திருக்கவும்.
         You would produce content like this:
 
-        Weird facts you don't know:
-        - Bananas are berries, but strawberries aren't.
-        - A single cloud can weigh over a million pounds.
-        - There's a species of jellyfish that is biologically immortal.
-        - Honey never spoils; archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still edible.
-        - The shortest war in history was between Britain and Zanzibar on August 27, 1896. Zanzibar surrendered after 38 minutes.
-        - Octopuses have three hearts and blue blood.
+        பெரியார் திராவிடக் கட்சிகளைப் பற்றி நீங்கள் தெரிந்து கொள்ள வேண்டிய விஷயங்களின் தொடர்ச்சி இது ஈ.வி.ராமசாமி ஒரு வாய்வீச்சாளர், அப்போது பரவலாக இருந்த சமூக தீமைகளை தனது பிரச்சாரத்திற்கான மூலதனமாகப் பயன்படுத்தினார். அவர் பகுத்தறிவுவாதியோ, மனிதநேயவாதியோ இல்லை. அவர் இந்துக்களுக்கு எதிரானவராகவும் ஆங்கிலேயர்களுக்கு ஆதரவாகவும் இருந்தார். அவரை பீமாராவ் ராம்ஜி அம்பேத்கருக்கு இணையாக வைத்து, தேசத்தை கட்டியெழுப்பிய, தேசபக்தர் அம்பேத்கரின் நினைவுக்கு பெரும் கேடு விளைவித்து வருகின்றனர். ஈ.வி.ராமசாமி நாயக்கர் விடுதலையில் (16 ஏப்ரல் 1950) பின்வருமாறு கூறினார். இன்று சமூகத்தில் பிராமணர்கள், சூத்திரர்கள் மற்றும் பஞ்சமர்கள் என மூன்று பெரும் பிரிவுகள் உள்ளன. இதில் பிராமணர்கள் உயர் சாதியினர் என்பதால் அவர்களுக்கு தேவையான சலுகைகளை பெற்று வருகின்றனர். பஞ்சமர்கள் தாழ்ந்த சாதியினர் என்பதால் அவர்களுக்குத் தேவையான சலுகைகளைப் பெறுகிறார்கள். மத்தியில் இருக்கும் சூத்திரர்களே சலுகைகள் கிடைக்காமல் தவிக்கின்றனர். மேலும் விவரங்களுக்கு காத்திருக்கவும்.
 
-        You are now tasked with creating the best short script based on the user's requested type of 'facts'.
-
-        Keep it brief, highly interesting, and unique.
 
         Stictly output the script in a JSON format like below, and only provide a parsable JSON object with the key 'script'.
 
