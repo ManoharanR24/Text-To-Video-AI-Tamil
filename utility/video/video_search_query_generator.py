@@ -116,4 +116,4 @@ def merge_empty_intervals(segments):
                 merged.append([interval, url])
                 i += 1
         
-        return merged
+    return merged
