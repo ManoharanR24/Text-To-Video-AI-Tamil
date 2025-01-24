@@ -33,11 +33,11 @@ if __name__ == "__main__":
     print(search_terms)
 
     background_video_urls = None
-    # if search_terms is not None:
-    #     background_video_urls = generate_video_url(search_terms, VIDEO_SERVER)
-    #     print(background_video_urls)
-    # else:
-    #     print("No background video")
+    if search_terms is not None:
+        background_video_urls = generate_video_url(search_terms, VIDEO_SERVER)
+        print(background_video_urls)
+    else:
+        print("No background video")
 
     background_video_urls = merge_empty_intervals(background_video_urls)
 
